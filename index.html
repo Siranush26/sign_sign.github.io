@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dom</title>
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<meta charset="utf-8"> 
+
+<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+ 
+    <div id="container">
+    <form name="myform" >
+        <h1>Log in</h1>
+        <div id="for_all">
+        <input type="email"  id="addr"  class="field" placeholder="Your email address"  onkeyup="addr_for()">
+        <span id="email_error"></span>
+        </div>
+        <div id="for_all">
+        <input type="text" id="username" class="field" name="username" placeholder="Create a username">
+        <span id="username_error"></span>
+        </div>
+        <div id="for_all">
+        <input type="password" id="pwd" class="field" name="pwd" placeholder="Create a password" onkeyup="password_func()" >
+        <span id="pwd_error"></span>
+        </div>
+        <div id="for_all">
+        <input type="text"  id="fname"  class="field" name="fname" placeholder="First name" minlength="3" maxlength="10">
+        
+        <input type="text"  id="lname" class="field" name="lname" placeholder="Last name" minlength="3" maxlength="10">
+        <span id="fname_error"></span> <span id="lname_error"></span>
+        </div>
+        <div id="cont">
+        <input type="checkbox" id="check" name="check" checked>
+        <span>Keeped me logged in when using this computer</span><br>
+       </div>
+       <div id="cont2">
+        <input type="checkbox" id="check"  name="check" checked>
+        <span id="left">Email me a weekly newsletter</span>
+        <input type="checkbox" id="check" name="check" checked>
+        <span>Email me a daily newsletter</span>
+    </div>
+
+    <button type="button" id="button" onclick="validateForm()  ">Complete Sign-Up</button>
+    <p>By registering you confirm that you agree with our</p>
+    <span class="sp_1">Terms & Conditions</span><span class="sp_2">and</span><span class="sp_3">Privacy Policy</span>
+    </form>
+</div>
+
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
